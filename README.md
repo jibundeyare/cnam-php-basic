@@ -55,6 +55,8 @@ Ce travail est à livrer le vendredi 21/12/2018 à 24h00 au plus tard.
 Pour les retardataires, un délai supplémentaire jusque dimanche 23/12/2018 à 24h00 sera toléré mais je sera beaucoup plus exigeant sur la qualité du travail.
 Autrement dit, si vous livrez en retard, le travail doit être impécable.
 
+La livraison doit être faite sous la forme d'un fichier zip contenant le dossier du projet.
+
 ### Critères d'évaluation
 
 - respect des consignes : structure du dossier projet, nom des pages, nom des champs, fonctionnalités
