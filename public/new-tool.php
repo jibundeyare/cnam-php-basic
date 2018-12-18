@@ -1,8 +1,14 @@
 <?php
-// public/new-tool.php
+
 // echo '<pre>';
 // var_dump($_POST);
 // echo '</pre>';
+
+$categories = [
+    'choisissez la catégorie',
+    'outil',
+    'matériel',
+];
 
 $errors = [];
 

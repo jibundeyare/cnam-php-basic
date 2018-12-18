@@ -37,25 +37,32 @@ Pour vous aider à mieux cerner le problème voici une analyse des données.
 
 #### Analyse de la page `new-tool`
 
-- code : chaîne de caractère, balise input type text
-- nom : chaîne de caractère, balise input type text
-- prix : nombre à virgule flottante, balise input type text
-- catégorie : nombre entier, balise select à choix unique
-- photo : fichier, balise input type file
+| champ     | name     | type                       | balise                | obligatoire |
+| --------- | -------- | -------------------------- | --------------------- | ----------- |
+| code      | code     | chaîne de caractère        | input type text       | oui         |
+| nom       | name     | chaîne de caractère        | input type text       | oui         |
+| prix      | price    | nombre à virgule flottante | input type text       | oui         |
+| catégorie | category | nombre entier              | select à choix unique | oui         |
+| photo     | photo    | fichier                    | input type file       | non         |
 
 #### Analyse de la page `new-sub-category`
 
-- catégorie : nombre entier, balise select à choix unique
-- nom : chaîne de caractère, balise input type text
-- description : chaîne de caractère, balise textarea
+| champ       | name        | type                       | balise                | obligatoire |
+| ----------- | ----------- | -------------------------- | --------------------- | ----------- |
+| catégorie   | category    | nombre entier              | select à choix unique | oui         |
+| nom         | name        | chaîne de caractère        | input type text       | oui         |
+| description | description | chaîne de caractère        | textarea              | non         |
 
 ### Livraison
 
 Ce travail est à livrer le vendredi 21/12/2018 à 24h00 au plus tard.
-Pour les retardataires, un délai supplémentaire jusque dimanche 23/12/2018 à 24h00 sera toléré mais je sera beaucoup plus exigeant sur la qualité du travail.
+Pour les retardataires, un délai supplémentaire jusque dimanche 23/12/2018 à 24h00 sera toléré, mais je serai beaucoup plus exigeant sur la qualité du travail.
 Autrement dit, si vous livrez en retard, le travail doit être impécable.
 
 La livraison doit être faite sous la forme d'un fichier zip contenant le dossier du projet.
+
+Vous devez déposer le fichier sur mon espace SFTP.
+Si vous n'y parvenez pas, en dernier recours, envoyez-le-moi par mail.
 
 ### Critères d'évaluation
 
