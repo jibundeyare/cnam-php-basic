@@ -1,4 +1,4 @@
-# CNAM PHP Baisc
+# CNAM PHP Basic
 
 ## Contrôle continu décembre 2018
 

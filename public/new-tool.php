@@ -19,29 +19,33 @@ $category = '';
 $photo = '';
 
 if ($_POST) {
-    $code = $_POST['code'];
-    $name = $_POST['name'];
-    $price = $_POST['price'];
-    $category = $_POST['category'];
-
-    // gérer la photo
-
     // vérifier la validité des données
-    if (empty($code)) {
+
+    if (empty($_POST['code'])) {
         $errors['code'] =  "Vous devez renseigner ce champ";
+    } else {
+        $code = $_POST['code'];
     }
 
-    if (empty($name)) {
+    if (empty($_POST['name'])) {
         $errors['name'] =  "Vous devez renseigner ce champ";
+    } else {
+        $name = $_POST['name'];
     }
 
-    if (empty($price)) {
+    if (empty($_POST['price'])) {
         $errors['price'] =  "Vous devez renseigner ce champ";
+    } else {
+        $price = $_POST['price'];
     }
 
-    if (empty($category)) {
+    if (empty($_POST['category'])) {
         $errors['category'] =  "Vous devez renseigner ce champ";
+    } else {
+        $category = $_POST['category'];
     }
+
+    // @todo gérer la photo
 
     // s'il y a une erreur, la transmettre à l'utilisateur
     // sinon stocker les données en BDD
