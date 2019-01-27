@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8" />
+    <title>Inscription</title>
+</head>
+<body>
+
+    <form method="post">
+
+        <div>
+            <div>
+                <label>prénom</label>
+            </div>
+            {% if errors.firstname is defined %}
+            <div>
+                {{ errors.firstname }}
+            </div>
+            {% endif %}
+            <div>
+                <input type="text" name="firstname" value="{{ firstname }}" />
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label>nom</label>
+            </div>
+            {% if errors.lastname is defined %}
+            <div>
+                {{ errors.lastname }}
+            </div>
+            {% endif %}
+            <div>
+                <input type="text" name="lastname" value="{{ lastname }}" />
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label>pseudo</label>
+            </div>
+            {% if errors.login is defined %}
+            <div>
+                {{ errors.login }}
+            </div>
+            {% endif %}
+            <div>
+                <input type="text" name="login" value="{{ login }}" />
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label>email</label>
+            </div>
+            {% if errors.email is defined %}
+            <div>
+                {{ errors.email }}
+            </div>
+            {% endif %}
+            <div>
+                <input type="email" name="email" value="{{ email }}" />
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <label>mot de passe</label>
+            </div>
+            {% if errors.password is defined %}
+            <div>
+                {{ errors.password }}
+            </div>
+            {% endif %}
+            <div>
+                <input type="password" name="password" value="{{ password }}" />
+            </div>
+        </div>
+
+        <div>
+            <button>Ok</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

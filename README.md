@@ -1,39 +1,45 @@
 # CNAM PHP Basic
 
-## Contrôle continu décembre 2018
+## Install
 
-Voici deux pages en wireframe (en fil de fer) du projet à réaliser :
+Attention, les dépendances (le dossier `vendor`) ne sont pas enregistrées dans le repo.
+Vous devez le installer par vous même après téléchargement du projet.
 
-![wireframe du formulaire d'ajout d'un nouvel outil](wireframes/new_tool.png)
+    cd cnam-php-basic
+    composer install
 
-![wireframe du formulaire d'ajout d'une nouvelle sous-catégorie](wireframes/new_sub_category.png)
+## Contrôle continu janvier 2019
 
-La première page a été réalisée en cours.
+Cette application possède trois pages :
 
-Votre tâche est de réaliser la deuxième page.
+1. une page d'inscription
+2. une page d'ajout d'un nouvel outil ou matériel dans la BDD
+3. une page d'ajout d'une nouvelle sous-catégorie d'outil ou de matériel dans la BDD
 
 ### Contraintes techniques
 
-La deuxième page sera nommée `new-sub-category.php`.
+La page d'inscription a été mise à jour et fonctionne avec le moteur de template Twig.
 
-Les variables devront être nommées en anglais mais les labels ou les placeholders des champs seront nommés en français (comme en cours).
+En vous inspirant de ce qui a été fait dans la page d'inscription (fichiers `public/inscription.php` et `templates/inscription.html.twig`), adaptez la page d'ajout d'outil / matériel et la page d'ajout de sous-catégorie pour qu'elles fonctionnent aussi avec Twig.
 
-Elle devra être scindée en deux parties :
+Le nom des fichiers dans le dossier `public` ne doit pas changer.
 
-1. la patrie contrôleur, dans le dossier `public`
-2. la partie vue, dans le dossier `templates`
-
-Le contrôleur doit :
-
-- défnir des valeurs de données par défaut
-- valider les données utilisateur
-- afficher la vue
-
-Inspirez-vous de ce qui a été fait en cours (fichiers `public/new-tool.php` et `templates/new-tool.php`) pour créer le code de la deuxième page.
+Le nom des fichiers dans le dossier `templates` ne change que d'extension.
+Exemple : `templates/inscription.php` devient `templates/inscription.html.twig`.
 
 ### Analyse
 
 Pour vous aider à mieux cerner le problème voici une analyse des données.
+
+#### Analyse de la page `inscription`
+
+| champ     | name      | type                | balise              | obligatoire |
+|-----------|-----------|---------------------|---------------------|-------------|
+| firstname | firstname | chaîne de caractère | input type text     | oui         |
+| lastname  | lastname  | chaîne de caractère | input type text     | oui         |
+| login     | login     | chaîne de caractère | input type text     | oui         |
+| email     | email     | chaîne de caractère | input type email    | oui         |
+| password  | password  | chaîne de caractère | input type password | oui         |
 
 #### Analyse de la page `new-tool`
 
@@ -55,18 +61,18 @@ Pour vous aider à mieux cerner le problème voici une analyse des données.
 
 ### Livraison
 
-Ce travail est à livrer le vendredi 21/12/2018 à 24h00 au plus tard.
-Pour les retardataires, un délai supplémentaire jusque dimanche 23/12/2018 à 24h00 sera toléré, mais je serai beaucoup plus exigeant sur la qualité du travail.
+Ce travail est à livrer le vendredi 08/02/2018 à 24h00 au plus tard.
+Pour les retardataires, un délai supplémentaire jusque dimanche 10/02/2019 à 24h00 sera toléré, mais je serai beaucoup plus exigeant sur la qualité du travail.
 Autrement dit, si vous livrez en retard, le travail doit être impécable.
 
-La livraison doit être faite sous la forme d'un fichier zip contenant le dossier du projet.
+La livraison doit être faite sous la forme d'un fichier zip contenant tout le dossier du projet.
 
 Vous devez déposer le fichier sur mon espace SFTP.
-Si vous n'y parvenez pas, en dernier recours, envoyez-le-moi par mail.
+Si vous n'y parvenez pas, en dernier recours, envoyez-le moi par mail.
 
 ### Critères d'évaluation
 
 - respect des consignes : structure du dossier projet, nom des pages, nom des champs, fonctionnalités
 - code style : lisibilité, indentation, nommage des variables, lignes vides, espaces après ou avant mot-clés
-- absence de bug (HTML et PHP)
+- absence de bug (HTML, PHP et Twig)
 

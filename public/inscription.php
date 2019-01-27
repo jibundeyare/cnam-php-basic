@@ -1,5 +1,22 @@
 <?php
 
+// activation du système d'autoloading de Composer
+require __DIR__.'/../vendor/autoload.php';
+
+// instanciation du chargeur de templates
+$loader = new Twig_Loader_Filesystem(__DIR__.'/../templates');
+
+// instanciation du moteur de template
+$twig = new Twig_Environment($loader, [
+    // activation du mode debug
+    'debug' => true,
+    // activation du mode de variables strictes
+    'strict_variables' => true,
+]);
+
+// chargement de l'extension Twig_Extension_Debug
+$twig->addExtension(new Twig_Extension_Debug());
+
 // echo '<pre>';
 // var_dump($_POST);
 // echo '</pre>';
@@ -47,5 +64,14 @@ if ($_POST) {
     // sinon stocker les données en BDD
 }
 
-require __DIR__.'/../templates/inscription.php';
+// affichage du rendu d'un template
+echo $twig->render('inscription.html.twig', [
+    // transmission de données au template
+    'errors' => $errors,
+    'firstname' => $firstname,
+    'lastname' => $lastname,
+    'login' => $login,
+    'email' => $email,
+    'password' => $password,
+]);
 
