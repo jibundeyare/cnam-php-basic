@@ -4,7 +4,7 @@
 
 Attention, les dépendances (le dossier `vendor`) ne sont pas enregistrées dans le repo.
 
-Vous devez le installer par vous même après téléchargement du projet.
+Vous devez les installer par vous même après téléchargement du projet.
 
 Rendez-vous dans le dossier dans lequel vous avez dézippé le fichier, puis tapez les commandes suivantes :
 
