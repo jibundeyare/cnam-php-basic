@@ -30,6 +30,8 @@ $email = '';
 $password = '';
 
 if ($_POST) {
+    // vérifier la validité des données
+
     if (empty($_POST['firstname'])) {
         $errors['firstname'] =  "Vous devez renseigner ce champ";
     } else {

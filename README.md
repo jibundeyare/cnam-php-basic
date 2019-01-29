@@ -3,9 +3,12 @@
 ## Install
 
 Attention, les dépendances (le dossier `vendor`) ne sont pas enregistrées dans le repo.
+
 Vous devez le installer par vous même après téléchargement du projet.
 
-    cd cnam-php-basic
+Rendez-vous dans le dossier dans lequel vous avez dézippé le fichier, puis tapez les commandes suivantes :
+
+    cd cnam-php-basic-master
     composer install
 
 ## Contrôle continu janvier 2019
